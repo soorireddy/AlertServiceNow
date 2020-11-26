@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="UserBadges" max_length="40" name="x_aleen_badgeoff_user_badges" sizeclass="0" type="collection">
         <element attributes="edge_encryption_enabled=true" label="AlertBadgeStatus" max_length="40" name="alert_badge_status" type="string"/>
+        <element label="BacksideHTML" max_length="10000" name="backsidehtml" type="string"/>
         <element label="BadgeId" max_length="40" name="badgeid" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="BadgeStatus" max_length="40" name="badge_status" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="BadgeType" max_length="40" name="badge_type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="BadgeValidFrom" max_length="40" name="badge_valid_from" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="BadgeValidTo" max_length="40" name="badge_valid_to" type="glide_date_time"/>
+        <element label="frontSideHTML" max_length="10000" name="frontsidehtml" type="string"/>
         <element label="IssueMobileCredentials" max_length="40" name="issue_mobile_credentials" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="ParentRequestId" max_length="40" name="parent_request_id" type="string"/>
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="UserImage" max_length="20000" name="userimage" type="string"/>
         <index name="index">
             <element name="user"/>
         </index>
