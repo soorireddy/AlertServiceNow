@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="User Badges Import Set" max_length="40" name="x_aleen_badgeoff_user_badges_import_set" type="collection">
+    <element extends="sys_import_set_row" label="User Badges Import Set" max_length="40" name="x_aleen_badgeoff_user_badges_import_set" sizeclass="3" type="collection">
         <element label="AlertProvisionStatus" max_length="50" name="alert_provision_status" type="string"/>
         <element label="BadgeId" max_length="40" name="badge_id" type="string"/>
         <element label="ParentRequestId" max_length="40" name="parent_request_id" type="string"/>
