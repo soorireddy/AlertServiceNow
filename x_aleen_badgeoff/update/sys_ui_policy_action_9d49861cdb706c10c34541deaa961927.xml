@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-26 14:46:27</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
-        <ui_policy display_value="Hide  Tak Info In User Badge  Page">95c8ced8db706c10c34541deaa9619eb</ui_policy>
+        <ui_policy display_value="Hide  Task Info In User Badge  Page">95c8ced8db706c10c34541deaa9619eb</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>
