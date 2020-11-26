@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="UserBadges" max_length="40" name="x_aleen_badgeoff_user_badges" sizeclass="0" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" label="AlertProvisionStatus" max_length="40" name="alert_badge_status" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Not Provisioned" value="Not Provisioned"/>
-                <element inactive_on_update="false" label="Provisioned Successfully" sequence="1" value="provisioned"/>
-            </choice>
-        </element>
+        <element attributes="edge_encryption_enabled=true" label="AlertProvisionStatus" max_length="40" name="alert_badge_status" type="string"/>
         <element label="BacksideHTML" max_length="10000" name="backsidehtml" type="string"/>
         <element label="BadgeId" max_length="40" name="badgeid" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="Active" label="BadgeStatus" max_length="40" name="badge_status" type="string">
