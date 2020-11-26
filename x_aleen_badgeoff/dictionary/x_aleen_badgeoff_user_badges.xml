@@ -8,5 +8,9 @@
         <element attributes="edge_encryption_enabled=true" label="BadgeValidTo" max_length="40" name="badge_valid_to" type="glide_date_time"/>
         <element label="IssueMobileCredentials" max_length="40" name="issue_mobile_credentials" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="ParentRequestId" max_length="40" name="parent_request_id" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
     </element>
 </database>
