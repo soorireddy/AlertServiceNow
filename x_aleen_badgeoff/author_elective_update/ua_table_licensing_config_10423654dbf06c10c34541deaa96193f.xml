@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_aleen_badgeoff_user_badges_importset</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:45:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10423654dbf06c10c34541deaa96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aleen_badgeoff_user_badges_importset</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>ua_table_licensing_config_10423654dbf06c10c34541deaa96193f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:45:08</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>ua_table_licensing_config_10423654dbf06c10c34541deaa96193f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_aleen_badgeoff_user_badges_importset</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-26 17:45:08</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>10423654dbf06c10c34541deaa96193f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_aleen_badgeoff_user_badges_importset</sys_name><sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>ua_table_licensing_config_10423654dbf06c10c34541deaa96193f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-26 17:45:08</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>293823466</payload_hash>
+        <record_name>x_aleen_badgeoff_user_badges_importset</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:45:08</sys_created_on>
+        <sys_id>18423654dbf06c10c34541deaa961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17605a8ab9d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:45:08</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>504236543cf06c109712a6c767ebb240</update_guid>
+        <update_guid_history>504236543cf06c109712a6c767ebb240:293823466</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:46:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>0372baf683d649a8801cd93dfa901440</sys_id>
+        <sys_metadata>10423654dbf06c10c34541deaa96193f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aleen_badgeoff_user_badges_importset</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_10423654dbf06c10c34541deaa96193f</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_10423654dbf06c10c34541deaa96193f">18423654dbf06c10c34541deaa961940</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:46:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

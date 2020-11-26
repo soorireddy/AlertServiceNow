@@ -10,9 +10,9 @@
             <plural>User Badges Import Sets</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 17:26:13</sys_created_on>
+            <sys_created_on>2020-11-26 17:47:31</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>cbed2290dbf06c10c34541deaa961995</sys_id>
+            <sys_id>8fc27e54dbf06c10c34541deaa9619e0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>User Badges Import Set</sys_name>
             <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -21,7 +21,7 @@
             <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
             <sys_update_name>sys_documentation_x_aleen_badgeoff_user_badges_import_set__en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 17:26:13</sys_updated_on>
+            <sys_updated_on>2020-11-26 17:47:31</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
