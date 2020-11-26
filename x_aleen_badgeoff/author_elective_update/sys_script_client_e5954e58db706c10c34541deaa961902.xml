@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>alert_badge_status</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide Badge Task info in User Badges Page</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	g_form.setDisabled('user',true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 14:33:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5954e58db706c10c34541deaa961902</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Hide Badge Task info in User Badges Page</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_script_client_e5954e58db706c10c34541deaa961902</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 14:47:23</sys_updated_on>
+        <table>x_aleen_badgeoff_user_badges</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_script_client_e5954e58db706c10c34541deaa961902</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;alert_badge_status&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hide Badge Task info in User Badges Page&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	g_form.setDisabled('user',true);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-26 14:33:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e5954e58db706c10c34541deaa961902&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Badge Task info in User Badges Page&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff"&gt;45d0a9d8dbfc2c10c34541deaa961990&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="BadgeOfficer"&gt;45d0a9d8dbfc2c10c34541deaa961990&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_e5954e58db706c10c34541deaa961902&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-26 14:47:23&lt;/sys_updated_on&gt;&lt;table&gt;x_aleen_badgeoff_user_badges&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-659541030</payload_hash>
+        <record_name>Hide Badge Task info in User Badges Page</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 14:47:23</sys_created_on>
+        <sys_id>24994a1cdb706c10c34541deaa9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1760505eee30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 14:47:23</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>2c994a1ce8706c105de35b9f52348cf4</update_guid>
+        <update_guid_history>2c994a1ce8706c105de35b9f52348cf4:-659541030,e64842d8f6706c10047d1fe4e664bf12:612033258,558702d8be706c1092a28d2bcc8f0e42:1672575722,9956ca5816706c1080c356ec8f88d673:1775919135</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 14:49:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0da93458834f44d4ae453229fdf2fb90</sys_id>
+        <sys_metadata>e5954e58db706c10c34541deaa961902</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Badge Task info in User Badges Page</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent display_value="UserBadges">a5452dd0db306c10c34541deaa961947</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_script_client_e5954e58db706c10c34541deaa961902</sys_update_name>
+        <sys_update_version display_value="sys_script_client_e5954e58db706c10c34541deaa961902">24994a1cdb706c10c34541deaa9619f5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 14:49:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
