@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="User Badges Import Set" max_length="40" name="x_aleen_badgeoff_user_badges_import_set" type="collection">
+        <element label="AlertProvisioningStatus" max_length="50" name="alertprovisioningstatus" type="string"/>
+        <element label="BadgeId" max_length="50" name="badgeid" type="string"/>
+        <element label="ParentRequestId" max_length="40" name="parentrequestid" type="string"/>
+    </element>
+</database>

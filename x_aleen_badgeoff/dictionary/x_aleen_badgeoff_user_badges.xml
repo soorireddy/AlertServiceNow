@@ -2,8 +2,8 @@
     <element label="UserBadges" max_length="40" name="x_aleen_badgeoff_user_badges" sizeclass="0" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="AlertBadgeStatus" max_length="40" name="alert_badge_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Inactive" value="Inactive"/>
-                <element inactive_on_update="false" label="Active" sequence="1" value="Active"/>
+                <element inactive_on_update="false" label="Not Provisioned" value="Not Provisioned"/>
+                <element inactive_on_update="false" label="Provisioned Successfully" sequence="1" value="provisioned"/>
             </choice>
         </element>
         <element label="BacksideHTML" max_length="10000" name="backsidehtml" type="string"/>
