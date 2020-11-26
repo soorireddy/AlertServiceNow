@@ -9,12 +9,12 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>SEPARATOR</link_type>
+        <link_type>LIST</link_type>
         <map_page/>
         <mobile_title>BadgeConfiguration</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name/>
-        <order>7</order>
+        <name>x_aleen_badgeoff_configuration</name>
+        <order>1</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3485edd0db306c10c34541deaa961913</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>BadgeConfiguration</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Badge Configuration</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_app_module_3485edd0db306c10c34541deaa961913</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 12:09:51</sys_updated_on>
+        <sys_updated_on>2020-11-26 12:35:43</sys_updated_on>
         <timeline_page/>
-        <title>BadgeConfiguration</title>
+        <title>Badge Configuration</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

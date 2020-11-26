@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="BadgeOfficer">f485e55cdbfc2c10c34541deaa9619ab</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>All</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_aleen_badgeoff_configuration</name>
+        <order>9</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 12:09:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f085edd0db306c10c34541deaa961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_app_module_f085edd0db306c10c34541deaa961917</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 12:09:51</sys_updated_on>
+        <timeline_page/>
+        <title>All</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_app_module_f085edd0db306c10c34541deaa961917</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="BadgeOfficer">f485e55cdbfc2c10c34541deaa9619ab</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>All</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_aleen_badgeoff_configuration</name><order>9</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-26 12:09:51</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>f085edd0db306c10c34541deaa961917</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All</sys_name><sys_overrides/><sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_app_module_f085edd0db306c10c34541deaa961917</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-26 12:09:51</sys_updated_on><timeline_page/><title>All</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1259224900</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>4dd0a150db306c10c34541deaa9619c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 12:09:51</sys_created_on>
+        <sys_id>7c85edd0db306c10c34541deaa961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1760475b50f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 12:09:51</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b485edd0aa306c10e98ae9d3d3ad2918</update_guid>
+        <update_guid_history>b485edd0aa306c10e98ae9d3d3ad2918:-1259224900</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2020-11-26 04:30:38">c14aa9d4db306c10c34541deaa9619e0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 12:30:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>4d7c2abce2794c0e8a3afa8da8382de9</sys_id>
+        <sys_metadata>f085edd0db306c10c34541deaa961917</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_app_module_f085edd0db306c10c34541deaa961917</sys_update_name>
+        <sys_update_version display_value="sys_app_module_f085edd0db306c10c34541deaa961917">7c85edd0db306c10c34541deaa961918</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 12:30:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
