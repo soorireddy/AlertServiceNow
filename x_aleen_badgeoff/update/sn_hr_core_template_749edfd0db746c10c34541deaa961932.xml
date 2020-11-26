@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_hr_core_template">
+    <sn_hr_core_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <assign_to/>
+        <assignment_option>named_user</assignment_option>
+        <assignment_type>employee</assignment_type>
+        <date_offset_quantity/>
+        <date_offset_type>on</date_offset_type>
+        <date_offset_units/>
+        <due_date_source/>
+        <global>true</global>
+        <group/>
+        <link_element/>
+        <name>Alert Badging Officer Template</name>
+        <next/>
+        <next_child/>
+        <owning_group/>
+        <parent_case_table>sn_hr_core_case</parent_case_table>
+        <roles/>
+        <short_description/>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sn_hr_core_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 20:59:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>749edfd0db746c10c34541deaa961932</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Alert Badging Officer Template</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sn_hr_core_template_749edfd0db746c10c34541deaa961932</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 21:06:57</sys_updated_on>
+        <table>sn_hr_core_task</table>
+        <template>short_description=Alert Badging officer Task^hr_task_type=hr_service^hr_service=0a0e9bd0db746c10c34541deaa961942^state=10^task_support_team=users_and_groups^parent_case_users=6ac478f5e7400300d3dd8a63c2f6a956^assigned_to=0a826bf03710200044e0bfc8bcbe5d7a^EQ</template>
+        <template_reference/>
+        <template_reference_field/>
+        <use_assignment_date>false</use_assignment_date>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+        <view/>
+    </sn_hr_core_template>
+</record_update>
