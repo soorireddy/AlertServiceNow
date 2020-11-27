@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
-        <category>general</category>
+        <category/>
         <client_script><![CDATA[addLoadEvent(function() {
     document.getElementById("printableArea").innerHTML = gel('frontSide').value;
 });
@@ -16,9 +16,27 @@ function changeTemplate() {
 function onCancel() {
     GlideDialogWindow.get().destroy();
     return false;
+}
+
+function onPrint() {
+    //var divToPrint = document.getElementById('printableArea').innerHTML;
+    //var newWindow = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
+    //newWindow.document.open();
+    //newWindow.document.write(divToPrint);
+    //newWindow.document.close();
+	
+	
+		var divContents = document.getElementById("printableArea").innerHTML; 
+        var a = window.open('', '', 'height=500, width=500'); 
+         a.document.write('<html>'); 
+         a.document.write('<body onload="window.print();window.close()">'); 
+         a.document.write(divContents); 
+         a.document.write('</body></html>'); 
+         a.document.close(); 
+         //a.print();  
 }]]></client_script>
         <description/>
-        <direct>true</direct>
+        <direct>false</direct>
         <endpoint>x_aleen_badgeoff_BadgeOfficer_print_preview_page.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
@@ -48,7 +66,7 @@ function onCancel() {
         <sys_created_on>2020-11-26 19:23:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9a274fd0db346c10c34541deaa9619e0</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>BadgeOfficer_print_preview_page</sys_name>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy>protected</sys_policy>
@@ -56,6 +74,6 @@ function onCancel() {
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_page_9a274fd0db346c10c34541deaa9619e0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 20:30:35</sys_updated_on>
+        <sys_updated_on>2020-11-27 06:35:05</sys_updated_on>
     </sys_ui_page>
 </record_update>
