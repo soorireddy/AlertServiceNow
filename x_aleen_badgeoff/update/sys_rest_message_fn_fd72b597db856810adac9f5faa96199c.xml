@@ -10,23 +10,23 @@
         <lock>false</lock>
         <oauth2_profile/>
         <protocol_name/>
-        <qualified_name>Activate Badge [ POST ]</qualified_name>
-        <rest_endpoint>http://125.19.78.185/api/identity/external/activateBadge</rest_endpoint>
-        <rest_message display_value="Activate Badge">e1cad710db746c10c34541deaa9619cf</rest_message>
+        <qualified_name>Create User In Alert [ POST ]</qualified_name>
+        <rest_endpoint>http://hscpartner.alertenterprise.com/api/identity/external/save</rest_endpoint>
+        <rest_message display_value="Create User In Alert">1452b5d7db856810adac9f5faa9619f5</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-26 20:43:24</sys_created_on>
+        <sys_created_on>2020-12-18 07:03:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ef0b5f10db746c10c34541deaa9619a8</sys_id>
+        <sys_id>fd72b597db856810adac9f5faa96199c</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>POST</sys_name>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
-        <sys_update_name>sys_rest_message_fn_ef0b5f10db746c10c34541deaa9619a8</sys_update_name>
+        <sys_update_name>sys_rest_message_fn_fd72b597db856810adac9f5faa96199c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 20:44:32</sys_updated_on>
+        <sys_updated_on>2020-12-18 07:04:07</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>

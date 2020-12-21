@@ -40,6 +40,45 @@ if (null != responseObj && responseObj.success && null != responseObj.data) {
 if (null != Token) {
     gs.info("Got the Token before making Provision call");
     gs.info(' Make API Call to  Deactivate  Badge');
+	  var assignBadgeRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.AssignBadge', 'POST');
+    assignBadgeRequest.setStringParameterNoEscape('Token', Token);
+
+    var gBadgeValidTo = new GlideDateTime(current.badge_valid_to.getDisplayValue());
+    var gDateValidTo = gBadgeValidTo.getDate();
+    var badgeValidTo = gDateValidTo.getByFormat('dd-MMM-YYYY');
+
+    var gBadgeValidFrom = new GlideDateTime(current.badge_valid_from.getDisplayValue());
+    var gDateValidFrom = gBadgeValidFrom.getDate();
+    var badgeValidFrom = gDateValidFrom.getByFormat('dd-MMM-YYYY');
+
+    var requestBody1 = '[{  "masterIdentityId":"' + current.user.user_name +
+        '", "requestUuid":"' + current.parent_request_id +
+        '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
+        '","validTo":"' + badgeValidTo +
+        '","assetAccessId":"' + current.badgeid +
+        '","action":"DEACTIVATE"}]}]';
+    var requestBody = requestBody1.toString();
+    gs.info("requestBody is " + requestBody);
+    assignBadgeRequest.setRequestBody(requestBody);
+    var assignBadgeRequestresponse = assignBadgeRequest.execute();
+    var assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
+    var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
+  /*
+    //if responsecode successful
+    //1. update user badges alert provisioning status to "provisioned"
+    current.alert_badge_status = 'Provisioned';
+    current.update();
+    // 2. set badge request task status = 'closed'
+    var grbadgeRequestTask = new GlideRecordSecure('x_aleen_badgeoff_badge_request_task');
+    var grRow = grbadgeRequestTask.get(current.parent_request_id);
+    grRow.state = 3;
+    grRow.update();
+    // 3. set Hr task status = 'closed'
+    var hrRequestTask = new GlideRecordSecure('sn_hr_core_task');
+    var hrRow = hrRequestTask.get(grRow.parent_task_id);
+    hrRow.state = 3;
+    hrRow.update();
+	*/
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -52,7 +91,7 @@ if (null != Token) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b9ffa5cdbf06c10c34541deaa9619ca</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Deactivate Badge</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -61,7 +100,7 @@ if (null != Token) {
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_2b9ffa5cdbf06c10c34541deaa9619ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 20:49:40</sys_updated_on>
+        <sys_updated_on>2020-12-18 10:36:48</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

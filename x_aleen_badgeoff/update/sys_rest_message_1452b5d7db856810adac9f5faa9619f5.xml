@@ -5,25 +5,25 @@
         <basic_auth_password/>
         <basic_auth_profile/>
         <basic_auth_user/>
-        <description>Deactivate Badge in Alert Enterprise</description>
-        <name>Deactivate Badge</name>
+        <description/>
+        <name>Create User In Alert</name>
         <oauth2_profile/>
         <protocol_name/>
-        <rest_endpoint>http://125.19.78.185/api/identity/external/deactivateBadge</rest_endpoint>
+        <rest_endpoint>http://hscpartner.alertenterprise.com/api/identity/external/save</rest_endpoint>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-26 20:44:07</sys_created_on>
+        <sys_created_on>2020-12-18 07:03:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>d21b9b10db746c10c34541deaa96197a</sys_id>
+        <sys_id>1452b5d7db856810adac9f5faa9619f5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Deactivate Badge</sys_name>
+        <sys_name>Create User In Alert</sys_name>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
-        <sys_update_name>sys_rest_message_d21b9b10db746c10c34541deaa96197a</sys_update_name>
+        <sys_update_name>sys_rest_message_1452b5d7db856810adac9f5faa9619f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 20:44:07</sys_updated_on>
+        <sys_updated_on>2020-12-18 07:03:55</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message>

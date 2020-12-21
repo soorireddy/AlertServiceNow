@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Activate Badge [ POST ]</qualified_name>
+        <rest_endpoint>http://125.19.78.185/api/identity/external/activateBadge</rest_endpoint>
+        <rest_message display_value="Activate Badge">e1cad710db746c10c34541deaa9619cf</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 20:43:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ef0b5f10db746c10c34541deaa9619a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>POST</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_rest_message_fn_ef0b5f10db746c10c34541deaa9619a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 20:44:32</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_rest_message_fn_ef0b5f10db746c10c34541deaa9619a8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>POST</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Activate Badge [ POST ]</qualified_name><rest_endpoint>http://125.19.78.185/api/identity/external/activateBadge</rest_endpoint><rest_message display_value="Activate Badge">e1cad710db746c10c34541deaa9619cf</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-26 20:43:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ef0b5f10db746c10c34541deaa9619a8</sys_id><sys_mod_count>1</sys_mod_count><sys_name>POST</sys_name><sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_rest_message_fn_ef0b5f10db746c10c34541deaa9619a8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-26 20:44:32</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>252366989</payload_hash>
+        <record_name>POST</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 20:44:32</sys_created_on>
+        <sys_id>cc5bd350db746c10c34541deaa961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176064ce85c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 20:44:32</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>c45bd350fa746c10f301ff2f7b754470</update_guid>
+        <update_guid_history>c45bd350fa746c10f301ff2f7b754470:252366989,af0b5f1041746c1089491bc8ba9af7a9:-343427606</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-18 07:02:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>30d6f45b1a654bb5aacfdfeafa9dab39</sys_id>
+        <sys_metadata>ef0b5f10db746c10c34541deaa9619a8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>POST</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_ef0b5f10db746c10c34541deaa9619a8</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_ef0b5f10db746c10c34541deaa9619a8">cc5bd350db746c10c34541deaa961970</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:02:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="DELETE">
+        <name>Authorization</name>
+        <rest_message_function display_value="POST">ce3b9b10db746c10c34541deaa96192f</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 20:47:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e58b5750db746c10c34541deaa9619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_e58b5750db746c10c34541deaa9619d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 20:47:15</sys_updated_on>
+        <value>Bearer ${Token}</value>
+    </sys_rest_message_fn_headers>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_rest_message_fn_headers_e58b5750db746c10c34541deaa9619d4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message_function display_value="POST">ce3b9b10db746c10c34541deaa96192f</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-26 20:47:15</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e58b5750db746c10c34541deaa9619d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_rest_message_fn_headers_e58b5750db746c10c34541deaa9619d4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-26 20:47:15</sys_updated_on><value>Bearer ${Token}</value></sys_rest_message_fn_headers></record_update>]]></payload>
+        <payload_hash>-1984757291</payload_hash>
+        <record_name>Authorization</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 20:47:15</sys_created_on>
+        <sys_id>bfeb5b50db746c10c34541deaa9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176064f66500000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 20:47:15</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>f7eb5b509c746c1062c0494eca25a5fe</update_guid>
+        <update_guid_history>f7eb5b509c746c1062c0494eca25a5fe:-1984757291</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-18 07:02:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn_headers">sys_rest_message_fn_headers</sys_db_object>
+        <sys_id>24c5aa031ecb45d0b0de6ae5c74089b9</sys_id>
+        <sys_metadata>e58b5750db746c10c34541deaa9619d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_headers_e58b5750db746c10c34541deaa9619d4</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_headers_e58b5750db746c10c34541deaa9619d4">bfeb5b50db746c10c34541deaa9619fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:02:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

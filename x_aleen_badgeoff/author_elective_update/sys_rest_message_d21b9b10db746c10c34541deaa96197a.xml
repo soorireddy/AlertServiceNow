@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="DELETE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>Deactivate Badge in Alert Enterprise</description>
+        <name>Deactivate Badge</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://125.19.78.185/api/identity/external/assignBadge</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 20:44:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d21b9b10db746c10c34541deaa96197a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Deactivate Badge</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_rest_message_d21b9b10db746c10c34541deaa96197a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-15 09:53:51</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_rest_message_d21b9b10db746c10c34541deaa96197a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description>Deactivate Badge in Alert Enterprise</description><name>Deactivate Badge</name><oauth2_profile/><protocol_name/><rest_endpoint>http://125.19.78.185/api/identity/external/assignBadge</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-26 20:44:07</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d21b9b10db746c10c34541deaa96197a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Deactivate Badge</sys_name><sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_rest_message_d21b9b10db746c10c34541deaa96197a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-12-15 09:53:51</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+        <payload_hash>678967130</payload_hash>
+        <record_name>Deactivate Badge</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-15 09:53:51</sys_created_on>
+        <sys_id>799cfa92dbc1e410adac9f5faa9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17665d205fe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-15 09:53:51</sys_updated_on>
+        <type>REST Message</type>
+        <update_guid>b19cfa9247c1e41011c78c5df4987ac4</update_guid>
+        <update_guid_history>b19cfa9247c1e41011c78c5df4987ac4:678967130,823bd35098746c10434377e5cc142454:-930216523</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-18 07:02:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message">sys_rest_message</sys_db_object>
+        <sys_id>2e765a96d3a546a69159306c3d128039</sys_id>
+        <sys_metadata>d21b9b10db746c10c34541deaa96197a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deactivate Badge</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_rest_message_d21b9b10db746c10c34541deaa96197a</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_d21b9b10db746c10c34541deaa96197a">799cfa92dbc1e410adac9f5faa9619c4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:02:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_aleen_badgeoff_badge_request_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create User In Alert After Badge Request</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    try {
+        gs.info("Create User In Alert   :: begin ");
+        var r = new sn_ws.RESTMessageV2('x_aleen_badgeoff.GetJWTToken', 'POST');
+        var response = r.executeAsync();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+        var Token = null;
+        var responseObj = JSON.parse(responseBody);
+        if (null != responseObj && responseObj.success && null != responseObj.data) {
+            Token = responseObj.data.access_token;
+            var requestBody1 = '{ "identity": { "firstName":"' + current.subject.first_name + '", "lastName":"' + current.subject.last_name + '","email":"' + current.subject.email +
+                '","masterIdentityId":"' + current.subject.user_name + '"}}';
+            var requestBody = requestBody1.toString();
+            gs.info("requestBody is " + requestBody);
+            var createUserRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.Create User In Alert', 'POST');
+            createUserRequest.setStringParameterNoEscape('Token', Token);
+            createUserRequest.setRequestBody(requestBody);
+            var createUserRequestresponse = createUserRequest.executeAsync();
+            var createUserRequestresponseBody = createUserRequestresponse.getBody();
+            var createUserRequesthttpStatus = createUserRequestresponse.getStatusCode();
+            if (createUserRequesthttpStatus == 200) {
+                gs.info(" User created Successfully in The Alert");
+            } else {
+                gs.info(" User creation is unsuccessfull in Alert");
+            }
+        }
+    } catch (ex) {
+        var message = ex.message;
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-18 07:12:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1714f11bdb856810adac9f5faa9619fb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create User In Alert After Badge Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_script_1714f11bdb856810adac9f5faa9619fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:45:30</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1714f11bdb856810adac9f5faa9619fb"/>
+</record_update>
