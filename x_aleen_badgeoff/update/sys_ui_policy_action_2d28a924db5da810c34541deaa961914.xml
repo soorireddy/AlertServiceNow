@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>badge_status</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-22 03:31:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2d28a924db5da810c34541deaa961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>badge_status</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2d28a924db5da810c34541deaa961914</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-22 03:31:32</sys_updated_on>
+        <table>x_aleen_badgeoff_user_badges</table>
+        <ui_policy display_value="Hide Status in before provisoninng in Alert">e7b7a524db5da810c34541deaa961945</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

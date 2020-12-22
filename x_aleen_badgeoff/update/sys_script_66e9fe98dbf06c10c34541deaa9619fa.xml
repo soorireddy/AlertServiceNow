@@ -31,7 +31,7 @@
     gs.info('setting parent task configuration');
     try {
         if (current.isNewRecord()) {
-            current.parent_request_id = parent.sys_id;
+            current.parent_request_id = parent.number;
         }
 		//TODO:: user image
 		var aebadgeSetting = new GlideRecordSecure('x_aleen_badgeoff_configuration');
@@ -53,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>66e9fe98dbf06c10c34541deaa9619fa</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>SetBadgeConfigAndTaskInfo</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_script_66e9fe98dbf06c10c34541deaa9619fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-27 11:59:13</sys_updated_on>
+        <sys_updated_on>2020-12-22 03:44:37</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

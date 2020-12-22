@@ -4,13 +4,13 @@
             <element>badgeid</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>b1f6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>cfa76524db5da810c34541deaa961972</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>badge_valid_from</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>35f6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>87a76524db5da810c34541deaa961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>badge_status</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>b5f6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>0ba76524db5da810c34541deaa961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>alert_badge_status</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>39f6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>8ba76524db5da810c34541deaa961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,27 +60,27 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>b9f6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>0fa76524db5da810c34541deaa961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>badge_type</element>
+            <element>issue_mobile_credentials</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>3df6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>8fa76524db5da810c34541deaa961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,41 +88,27 @@
             <element>badge_valid_to</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>bdf6ca98db706c10c34541deaa96191a</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>03a76524db5da810c34541deaa961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>issue_mobile_credentials</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>31f6ca98db706c10c34541deaa96191b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>parent_request_id</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 14:36:01</sys_created_on>
-            <sys_id>b1f6ca98db706c10c34541deaa96191b</sys_id>
+            <sys_created_on>2020-12-22 03:29:11</sys_created_on>
+            <sys_id>83a76524db5da810c34541deaa961974</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Badge Details" display_value="Badge Details" name="x_aleen_badgeoff_user_badges" sys_domain="global" view="Default view">4f94ce18db706c10c34541deaa96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-26 14:36:01</sys_updated_on>
+            <sys_updated_on>2020-12-22 03:29:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

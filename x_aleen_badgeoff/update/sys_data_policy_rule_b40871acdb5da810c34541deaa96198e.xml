@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>false</disabled>
+        <field>badge_status</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-22 04:40:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_data_policy display_value="Disable Badge Status">b80871acdb5da810c34541deaa96198a</sys_data_policy>
+        <sys_id>b40871acdb5da810c34541deaa96198e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>badge_status</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_data_policy_rule_b40871acdb5da810c34541deaa96198e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-22 04:40:34</sys_updated_on>
+        <table>x_aleen_badgeoff_user_badges</table>
+    </sys_data_policy_rule>
+</record_update>
