@@ -25,7 +25,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Deactivate Badge</name>
+        <name>Deactivate</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var r = new sn_ws.RESTMessageV2('x_aleen_badgeoff.GetJWTToken', 'POST');
@@ -60,8 +60,8 @@ if (null != Token) {
     var assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
     var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
 	var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
-	//gs.info(" assignBadgeRequesthttpStatus is " + assignBadgeRequesthttpStatus);
-    //gs.info("assignBadgeresponseObj is " + assignBadgeresponseObj);
+	gs.info(" Deactivate Badge RequesthttpStatus  ::  " + assignBadgeRequesthttpStatus);
+    gs.info("Deactivate Badge responseObj :: " + JSON.stringify(assignBadgeresponseObj));
     if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
         current.badge_status  = 'Inactive';
         current.update();
@@ -78,8 +78,8 @@ if (null != Token) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b9ffa5cdbf06c10c34541deaa9619ca</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Deactivate Badge</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Deactivate</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
@@ -87,7 +87,7 @@ if (null != Token) {
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_2b9ffa5cdbf06c10c34541deaa9619ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-22 04:51:28</sys_updated_on>
+        <sys_updated_on>2020-12-22 06:41:41</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

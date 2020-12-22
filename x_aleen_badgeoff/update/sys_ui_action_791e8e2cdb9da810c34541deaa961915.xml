@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.alert_badge_status == 'Provisioned'  &amp;&amp;  current.badge_status  ==  'Inactive'</condition>
+        <condition>current.alert_badge_status == 'Provisioned' </condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -25,7 +25,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Activate</name>
+        <name>Deprovision</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var r = new sn_ws.RESTMessageV2('x_aleen_badgeoff.GetJWTToken', 'POST');
@@ -39,39 +39,32 @@ if (null != responseObj && responseObj.success && null != responseObj.data) {
 }
 if (null != Token) {
     gs.info("Got the Token before making Provision call");
-    gs.info(' Make API Call to  Activate  Badge');
     var assignBadgeRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.AssignBadge', 'POST');
     assignBadgeRequest.setStringParameterNoEscape('Token', Token);
-
     var gBadgeValidTo = new GlideDateTime(current.badge_valid_to.getDisplayValue());
     var gDateValidTo = gBadgeValidTo.getDate();
     var badgeValidTo = gDateValidTo.getByFormat('dd-MMM-YYYY');
-
     var gBadgeValidFrom = new GlideDateTime(current.badge_valid_from.getDisplayValue());
     var gDateValidFrom = gBadgeValidFrom.getDate();
     var badgeValidFrom = gDateValidFrom.getByFormat('dd-MMM-YYYY');
-
     var requestBody1 = '[{  "masterIdentityId":"' + current.user.user_name +
         '", "requestUuid":"' + current.sys_id +
         '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
         '","validTo":"' + badgeValidTo +
         '","assetAccessId":"' + current.badgeid +
-        '","action":"ACTIVATE"}]}]';
+        '","action":"REMOVE"}]}]';
     var requestBody = requestBody1.toString();
-    gs.info("Assign Badge requestBody is " + requestBody);
+    gs.info("requestBody is " + requestBody);
     assignBadgeRequest.setRequestBody(requestBody);
     var assignBadgeRequestresponse = assignBadgeRequest.execute();
     var assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
     var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
-    var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
-    gs.info("Assign Badge response Status   ::  " + assignBadgeRequesthttpStatus);
-    gs.info("Assign Badge response " + JSON.stringify(assignBadgeresponseObj));
+	var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
+	gs.info(" De provision RequesthttpStatus is " + assignBadgeRequesthttpStatus);
+    gs.info(" De provision responseObj is " + JSON.JSON.stringify(assignBadgeresponseObj));
     if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
-        gs.info(current.badgeid + " is activated successfully");
-        current.badge_status = 'Active';
+        current.alert_badge_status   =  null;
         current.update();
-    } else {
-        gs.info(" Error occured while activating  badge  :: " + current.badgeid);
     }
 }]]></script>
         <show_insert>false</show_insert>
@@ -80,21 +73,21 @@ if (null != Token) {
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-26 18:42:51</sys_created_on>
+        <sys_created_on>2020-12-22 06:18:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ac8e329cdbf06c10c34541deaa96199c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Activate</sys_name>
+        <sys_id>791e8e2cdb9da810c34541deaa961915</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Deprovision</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
-        <sys_update_name>sys_ui_action_ac8e329cdbf06c10c34541deaa96199c</sys_update_name>
+        <sys_update_name>sys_ui_action_791e8e2cdb9da810c34541deaa961915</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-22 06:43:26</sys_updated_on>
+        <sys_updated_on>2020-12-22 06:40:44</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
