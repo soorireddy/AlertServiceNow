@@ -61,7 +61,7 @@ if (null != Token) {
     var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
 	var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
 	gs.info(" De provision RequesthttpStatus is " + assignBadgeRequesthttpStatus);
-    gs.info(" De provision responseObj is " + JSON.JSON.stringify(assignBadgeresponseObj));
+    gs.info(" De provision responseObj is " + JSON.stringify(assignBadgeresponseObj));
     if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
         current.alert_badge_status   =  null;
         current.update();
@@ -78,7 +78,7 @@ if (null != Token) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>791e8e2cdb9da810c34541deaa961915</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Deprovision</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -87,7 +87,7 @@ if (null != Token) {
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_791e8e2cdb9da810c34541deaa961915</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-22 06:40:44</sys_updated_on>
+        <sys_updated_on>2020-12-22 10:28:59</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
