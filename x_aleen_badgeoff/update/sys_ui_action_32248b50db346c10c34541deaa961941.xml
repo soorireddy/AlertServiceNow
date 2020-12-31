@@ -38,8 +38,8 @@ if (null != responseObj && responseObj.success && null != responseObj.data) {
     Token = responseObj.data.access_token;
 }
 if (null != Token) {
-   // gs.info("Got the Token before making Provision call");
-   // gs.info(' Calling Alert  API to  Assign  Badge');
+    // gs.info("Got the Token before making Provision call");
+    // gs.info(' Calling Alert  API to  Assign  Badge');
     var assignBadgeRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.AssignBadge', 'POST');
     assignBadgeRequest.setStringParameterNoEscape('Token', Token);
 
@@ -61,34 +61,39 @@ if (null != Token) {
     gs.info(" Endpoint is " + assignBadgeRequest.getEndpoint());
     gs.info("requestBody is " + requestBody);
     assignBadgeRequest.setRequestBody(requestBody);
+    assignBadgeRequest.setHttpTimeout(120000);
     var assignBadgeRequestresponse = assignBadgeRequest.execute();
     var assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
     var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
-    var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
     gs.info(" Assign Badge Request httpStatus :: " + assignBadgeRequesthttpStatus);
+    // var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
+    //gs.info("Assign Badge response " + JSON.stringify(assignBadgeresponseObj));
     //gs.info("assignBadgeresponseObj is " + assignBadgeresponseObj);
-    if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
+    //   if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
+    if (assignBadgeRequesthttpStatus != 400) {
         //1. update user badges alert provisioning status to "provisioned"
         current.alert_badge_status = 'Provisioned';
         current.update();
-		var hrTaskId = null;
+        var hrTaskId = null;
         gs.info("BAdge Request  Task ID " + current.parent_request_id);
         if (null != current.parent_request_id && current.parent_request_id != "") {
             // 2. set badge request task status = 'closed'
             var grbadgeRequestTask = new GlideRecordSecure('x_aleen_badgeoff_badge_request_task');
-            grbadgeRequestTask.get('number',current.parent_request_id);
-            grbadgeRequestTask.state = 3;
-			hrTaskId = grbadgeRequestTask.parent_task_id;
-            grbadgeRequestTask.update();
-			gs.info("Badge request Closed Successfully ");
-            gs.info("HR Request Task ID " + hrTaskId);
-            if (null != hrTaskId && hrTaskId != "") {
-                // 3. set Hr task status = 'closed'
-                var hrRequestTask = new GlideRecordSecure('sn_hr_core_task');
-                hrRequestTask.get(hrTaskId);
-                hrRequestTask.state = 3;
-                hrRequestTask.update();
-				gs.info("HR request Closed Successfully ");
+            if (grbadgeRequestTask.get('number', current.parent_request_id)) {
+                grbadgeRequestTask.state = 3;
+                hrTaskId = grbadgeRequestTask.parent_task_id;
+                grbadgeRequestTask.update();
+                gs.info("Badge request Closed Successfully ");
+                gs.info("HR Request Task ID " + hrTaskId);
+                if (null != hrTaskId && hrTaskId != "") {
+                    // 3. set Hr task status = 'closed'
+                    var hrRequestTask = new GlideRecordSecure('sn_hr_core_task');
+                    if (hrRequestTask.get(hrTaskId)) {
+                        hrRequestTask.state = 3;
+                        hrRequestTask.update();
+                        gs.info("HR request Closed Successfully ");
+                    }
+                }
             }
         }
     }
@@ -104,7 +109,7 @@ if (null != Token) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>32248b50db346c10c34541deaa961941</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Provision</sys_name>
         <sys_overrides/>
         <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -113,7 +118,7 @@ if (null != Token) {
         <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_32248b50db346c10c34541deaa961941</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-22 06:52:25</sys_updated_on>
+        <sys_updated_on>2020-12-23 07:24:11</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

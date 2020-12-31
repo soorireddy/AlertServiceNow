@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="UserBadges" max_length="40" name="x_aleen_badgeoff_user_badges" sizeclass="0" type="collection">
+    <element label="UserBadges" max_length="40" name="x_aleen_badgeoff_user_badges" sizeclass="3" type="collection">
         <element attributes="edge_encryption_enabled=true" label="AlertProvisionStatus" max_length="40" name="alert_badge_status" type="string"/>
         <element label="BacksideHTML" max_length="10000" name="backsidehtml" type="string"/>
-        <element label="BadgeId" max_length="40" name="badgeid" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="Active" label="BadgeStatus" max_length="40" name="badge_status" type="string">
+        <element label="Badge ID" max_length="40" name="badgeid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Active" label="Badge Status" max_length="40" name="badge_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="Active" value="Active"/>
                 <element inactive_on_update="false" label="Inactive" value="Inactive"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="BadgeType" max_length="40" name="badge_type" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Badge Type" max_length="40" name="badge_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Permanent" value="Permanent"/>
                 <element inactive_on_update="false" label="Temp" value="Temp"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="BadgeValidFrom" max_length="40" name="badge_valid_from" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" label="BadgeValidTo" max_length="40" name="badge_valid_to" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Badge Valid From" max_length="40" name="badge_valid_from" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Badge Valid To" max_length="40" name="badge_valid_to" type="glide_date_time"/>
         <element label="frontSideHTML" max_length="10000" name="frontsidehtml" type="string"/>
         <element label="IssueMobileCredentials" max_length="40" name="issue_mobile_credentials" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="ParentRequestId" max_length="40" name="parent_request_id" type="string"/>
