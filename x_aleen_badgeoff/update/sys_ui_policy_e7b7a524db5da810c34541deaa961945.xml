@@ -21,7 +21,7 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>Hide Status in before provisoninng in Alert</short_description>
+        <short_description>Hide Status in before provisioning in Alert</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-12-22 03:31:09</sys_created_on>
@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e7b7a524db5da810c34541deaa961945</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Hide Status in before provisoninng in Alert</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Hide Status in before provisioning in Alert</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
@@ -38,7 +38,7 @@
         <sys_scope display_value="AE BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_policy_e7b7a524db5da810c34541deaa961945</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-22 05:09:20</sys_updated_on>
+        <sys_updated_on>2021-01-06 05:56:47</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui_type>10</ui_type>
         <view/>

@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-12-22 03:31:32</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
-        <ui_policy display_value="Hide Status in before provisoninng in Alert">e7b7a524db5da810c34541deaa961945</ui_policy>
+        <ui_policy display_value="Hide Status in before provisioning in Alert">e7b7a524db5da810c34541deaa961945</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>
