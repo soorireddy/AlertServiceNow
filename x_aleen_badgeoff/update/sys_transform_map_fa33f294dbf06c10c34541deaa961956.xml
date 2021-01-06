@@ -28,10 +28,10 @@
         <sys_id>fa33f294dbf06c10c34541deaa961956</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>User Badges Import Set</sys_name>
-        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_package display_value="AE BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope display_value="AE BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_transform_map_fa33f294dbf06c10c34541deaa961956</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-26 18:33:58</sys_updated_on>
