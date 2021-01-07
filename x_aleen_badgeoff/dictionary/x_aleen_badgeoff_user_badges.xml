@@ -17,7 +17,9 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Badge Valid From" max_length="40" name="badge_valid_from" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Badge Valid To" max_length="40" name="badge_valid_to" type="glide_date_time"/>
+        <element display="true" label="Company Name" max_length="50" name="company_name" type="string"/>
         <element label="frontSideHTML" max_length="10000" name="frontsidehtml" type="string"/>
+        <element label="ImagePrefix" max_length="100" name="imageprefix" type="string"/>
         <element label="IssueMobileCredentials" max_length="40" name="issue_mobile_credentials" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="ParentRequestId" max_length="40" name="parent_request_id" type="string"/>
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>

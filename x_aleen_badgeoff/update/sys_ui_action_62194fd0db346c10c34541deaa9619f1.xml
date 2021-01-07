@@ -32,7 +32,16 @@
     var gdw = new GlideModal('x_aleen_badgeoff_BadgeOfficer_print_preview_page', false, 800);
     gdw.setTitle("Previvew & Print");
 	var frontsidehtmlString = g_form.getValue('frontsidehtml');
-	frontsidehtmlString = frontsidehtmlString.replace('${identity.fullName}', g_form.getValue('badgeid'));
+	//frontsidehtmlString = frontsidehtmlString.replace('${identity.fullName}', g_form.getValue('badgeid'));
+	
+	frontsidehtmlString = frontsidehtmlString.replace('##COMPANY_NAME##', g_form.getValue('company_name'));
+   frontsidehtmlString = frontsidehtmlString.replace('##BADGE_ID##', g_form.getValue('badgeid'));
+   frontsidehtmlString = frontsidehtmlString.replace('##USER_IMAGE##', g_form.getValue('imageprefix'));
+	
+	
+	
+	
+	
     gdw.setPreference("sysparm_fronttemplate", frontsidehtmlString);
     gdw.setPreference("sysparm_backtemplate", g_form.getValue('backsidehtml'));
     gdw.render();
@@ -48,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>62194fd0db346c10c34541deaa9619f1</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Preview &amp; Print</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -57,7 +66,7 @@
         <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_62194fd0db346c10c34541deaa9619f1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-18 11:04:01</sys_updated_on>
+        <sys_updated_on>2021-01-07 16:28:21</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

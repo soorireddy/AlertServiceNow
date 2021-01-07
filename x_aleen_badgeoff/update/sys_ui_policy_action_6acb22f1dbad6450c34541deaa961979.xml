@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>company_name</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 15:55:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6acb22f1dbad6450c34541deaa961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>company_name</sys_name>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_ui_policy_action_6acb22f1dbad6450c34541deaa961979</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 15:55:03</sys_updated_on>
+        <table>x_aleen_badgeoff_user_badges</table>
+        <ui_policy display_value="Hide  Task Info In User Badge  Page">95c8ced8db706c10c34541deaa9619eb</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>
