@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>sdadsad</name>
+        <order/>
+        <roles>x_aleen_badgeoff.admin</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 08:11:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>d7b18175dba96450c34541deaa96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sdadsad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_ui_application_d7b18175dba96450c34541deaa96190f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 08:11:32</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_ui_application_d7b18175dba96450c34541deaa96190f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>sdadsad</name><order/><roles>x_aleen_badgeoff.admin</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-01-07 08:11:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d7b18175dba96450c34541deaa96190f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sdadsad</sys_name><sys_overrides/><sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_ui_application_d7b18175dba96450c34541deaa96190f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-01-07 08:11:32</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>1888145892</payload_hash>
+        <record_name>sdadsad</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 08:11:32</sys_created_on>
+        <sys_id>5bb18175dba96450c34541deaa961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176dbe69cde0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 08:11:32</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>93b18175eca964503b2e0b8e396a2a11</update_guid>
+        <update_guid_history>93b18175eca964503b2e0b8e396a2a11:1888145892</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 08:35:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>8f50ae036fb046ccada9e7633a91cde4</sys_id>
+        <sys_metadata>d7b18175dba96450c34541deaa96190f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sdadsad</sys_name>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_ui_application_d7b18175dba96450c34541deaa96190f</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_d7b18175dba96450c34541deaa96190f">5bb18175dba96450c34541deaa961911</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 08:35:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

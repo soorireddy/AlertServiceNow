@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 19:41:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4e7a0f54db346c10c34541deaa9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Preview &amp; Print.x_aleen_badgeoff.badge_admin</sys_name>
+        <sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_ui_action display_value="Preview &amp; Print">62194fd0db346c10c34541deaa9619f1</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_4e7a0f54db346c10c34541deaa9619ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 19:41:05</sys_updated_on>
+        <sys_user_role display_value="x_aleen_badgeoff.badge_admin" name="x_aleen_badgeoff.badge_admin">71612ddcdbfc2c10c34541deaa96193d</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_ui_action_role_4e7a0f54db346c10c34541deaa9619ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-26 19:41:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4e7a0f54db346c10c34541deaa9619ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Preview &amp; Print.x_aleen_badgeoff.badge_admin</sys_name><sys_package display_value="BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_ui_action display_value="Preview &amp; Print">62194fd0db346c10c34541deaa9619f1</sys_ui_action><sys_update_name>sys_ui_action_role_4e7a0f54db346c10c34541deaa9619ee</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-26 19:41:05</sys_updated_on><sys_user_role display_value="x_aleen_badgeoff.badge_admin" name="x_aleen_badgeoff.badge_admin">71612ddcdbfc2c10c34541deaa96193d</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>-1955673461</payload_hash>
+        <record_name>Preview &amp; Print.x_aleen_badgeoff.badge_admin</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 19:41:05</sys_created_on>
+        <sys_id>eaccc7d4db346c10c34541deaa96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1760612d1d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 19:41:05</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>26ccc7d4de346c105b8d008a4ceb339d</update_guid>
+        <update_guid_history>26ccc7d4de346c105b8d008a4ceb339d:-1955673461</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 07:45:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>48058c0025a14e60bab9247b731ea9a1</sys_id>
+        <sys_metadata>4e7a0f54db346c10c34541deaa9619ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Preview &amp; Print.x_aleen_badgeoff.badge_admin</sys_name>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_4e7a0f54db346c10c34541deaa9619ee</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_4e7a0f54db346c10c34541deaa9619ee">eaccc7d4db346c10c34541deaa96199d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 07:45:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

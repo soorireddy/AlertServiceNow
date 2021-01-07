@@ -7,7 +7,7 @@
         <hint>Alert Badge Officer App</hint>
         <name/>
         <order/>
-        <roles>x_aleen_badgeoff.badge_admin,x_aleen_badgeoff.integration_admin,x_aleen_badgeoff.admin</roles>
+        <roles>x_aleen_badgeoff.admin,x_aleen_badgeoff.approver</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-26 12:09:51</sys_created_on>
@@ -15,17 +15,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f485e55cdbfc2c10c34541deaa9619ab</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>AE BadgeOfficer</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AE Badge Officer</sys_name>
         <sys_overrides/>
-        <sys_package display_value="AE BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="AE BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_app_application_f485e55cdbfc2c10c34541deaa9619ab</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-31 06:35:47</sys_updated_on>
-        <title>AE BadgeOfficer</title>
+        <sys_updated_on>2021-01-07 07:50:41</sys_updated_on>
+        <title>AE Badge Officer</title>
         <view_name/>
     </sys_app_application>
 </record_update>

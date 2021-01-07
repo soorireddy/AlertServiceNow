@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_aleen_badgeoff_sdadsad</description>
+        <name>x_aleen_badgeoff_sdadsad</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 08:11:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>17b18175dba96450c34541deaa961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aleen_badgeoff_sdadsad</sys_name>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_security_acl_17b18175dba96450c34541deaa961922</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 08:11:32</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_security_acl_17b18175dba96450c34541deaa961922</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_aleen_badgeoff_sdadsad</description><name>x_aleen_badgeoff_sdadsad</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-01-07 08:11:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>17b18175dba96450c34541deaa961922</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_aleen_badgeoff_sdadsad</sys_name><sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_security_acl_17b18175dba96450c34541deaa961922</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-01-07 08:11:32</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-439344362</payload_hash>
+        <record_name>x_aleen_badgeoff_sdadsad</record_name>
+        <reverted_from/>
+        <source>b6a82994db306c10c34541deaa96190f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 08:11:32</sys_created_on>
+        <sys_id>dbb18175dba96450c34541deaa961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176dbe69e320000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 08:11:32</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>17b1817529a964504db3f74ff2082d24</update_guid>
+        <update_guid_history>17b1817529a964504db3f74ff2082d24:-439344362</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-07 08:17:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>013a4341e1ed45e0815b5972e6cd16a4</sys_id>
+        <sys_metadata>17b18175dba96450c34541deaa961922</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aleen_badgeoff_sdadsad</sys_name>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent display_value="">9bb18175dba96450c34541deaa96192d</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_security_acl_17b18175dba96450c34541deaa961922</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_17b18175dba96450c34541deaa961922">dbb18175dba96450c34541deaa961924</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-07 08:17:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

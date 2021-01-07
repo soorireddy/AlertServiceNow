@@ -37,7 +37,7 @@
     </sys_script_client>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="AE BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <application display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</application>
         <file_path/>
         <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
         <instance_name>ven02573</instance_name>
@@ -73,11 +73,11 @@
         <sys_metadata>e5954e58db706c10c34541deaa961902</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Hide Badge Task info in User Badges Page</sys_name>
-        <sys_package display_value="AE BadgeOfficer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_parent display_value="UserBadges">a5452dd0db306c10c34541deaa961947</sys_parent>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="AE BadgeOfficer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
         <sys_update_name>sys_script_client_e5954e58db706c10c34541deaa961902</sys_update_name>
         <sys_update_version display_value="sys_script_client_e5954e58db706c10c34541deaa961902">24994a1cdb706c10c34541deaa9619f5</sys_update_version>
