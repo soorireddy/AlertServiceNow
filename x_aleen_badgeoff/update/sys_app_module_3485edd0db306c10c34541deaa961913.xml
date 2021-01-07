@@ -18,7 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_aleen_badgeoff.admin</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3485edd0db306c10c34541deaa961913</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Badge Configuration</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_app_module_3485edd0db306c10c34541deaa961913</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 12:35:43</sys_updated_on>
+        <sys_updated_on>2021-01-07 12:26:18</sys_updated_on>
         <timeline_page/>
         <title>Badge Configuration</title>
         <uncancelable>false</uncancelable>
