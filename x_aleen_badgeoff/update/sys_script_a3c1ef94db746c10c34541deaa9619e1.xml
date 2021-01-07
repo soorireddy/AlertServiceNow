@@ -37,13 +37,16 @@
     badingofficerTask.assigned_to = current.assigned_to;
     badingofficerTask.subject = current.parent.subject_person;
     badingofficerTask.parent_task_id = current.sys_id;
-	badingofficerTask.description = 'Requested Created by HR Task ::' + current.number;
+    badingofficerTask.description = 'Requested Created by HR Task ::' + current.number;
     badingofficerTask.requestdate = new GlideDateTime();
-    badingofficerTask.insert();
-
+    var idcreated = badingofficerTask.insert();
     gs.info("Inserted record in  badge task");
-
-
+    gs.info("Badge Request Number created is :: " + idcreated);
+    if (badingofficerTask.get(idcreated)) {
+        current.rich_description = 'please take action on badge request Created for this activity::' + badingofficerTask.number;
+        current.work_notes = 'No action required on this task here';
+        current.update();
+    }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -53,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a3c1ef94db746c10c34541deaa9619e1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>On Creation of HRTask CreateBadgeRequest</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -62,7 +65,7 @@
         <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_script_a3c1ef94db746c10c34541deaa9619e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-06 05:37:01</sys_updated_on>
+        <sys_updated_on>2021-01-07 13:44:41</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
