@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="issue_mobile_credentials" label="Issue Mobile Credentials" language="en" table="x_aleen_badgeoff_user_badges">
+    <sys_documentation element="user_name" label="User Name" language="en" table="x_aleen_badgeoff_user_badges">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>issue_mobile_credentials</element>
+            <element>user_name</element>
             <help/>
             <hint/>
-            <label>Issue Mobile Credentials</label>
+            <label>User Name</label>
             <language>en</language>
             <name>x_aleen_badgeoff_user_badges</name>
-            <plural>Issue Mobile Credentials</plural>
+            <plural>User Names</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-26 12:08:49</sys_created_on>
+            <sys_created_on>2021-01-08 10:18:09</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>71452dd0db306c10c34541deaa9619d6</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Issue Mobile Credentials</sys_name>
+            <sys_id>bf486a0adba5a450c34541deaa961949</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User Name</sys_name>
             <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
-            <sys_update_name>sys_documentation_x_aleen_badgeoff_user_badges_issue_mobile_credentials_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_aleen_badgeoff_user_badges_user_name_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-01-08 07:40:42</sys_updated_on>
+            <sys_updated_on>2021-01-08 10:18:09</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
