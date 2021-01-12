@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="AE Badge Officer">f485e55cdbfc2c10c34541deaa9619ab</application>
+        <application display_value="AE Badge Office">f485e55cdbfc2c10c34541deaa9619ab</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -31,10 +31,10 @@
         <sys_mod_count>2</sys_mod_count>
         <sys_name>User Badges</sys_name>
         <sys_overrides/>
-        <sys_package display_value="AE Badge Officer" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="AE Badge Officer">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_app_module_b085edd0db306c10c34541deaa96191d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-26 12:34:49</sys_updated_on>
