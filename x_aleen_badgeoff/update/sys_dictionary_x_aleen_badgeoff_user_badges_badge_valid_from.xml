@@ -49,8 +49,8 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-26 12:08:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>29452dd0db306c10c34541deaa9619c0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_id>760f03afdb61a010c34541deaa96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Badge Valid From</sys_name>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_dictionary_x_aleen_badgeoff_user_badges_badge_valid_from</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-31 06:40:14</sys_updated_on>
+        <sys_updated_on>2021-01-13 04:58:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
