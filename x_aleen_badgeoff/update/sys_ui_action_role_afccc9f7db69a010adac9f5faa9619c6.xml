@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-13 14:07:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>afccc9f7db69a010adac9f5faa9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remove.x_aleen_badgeoff.admin</sys_name>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_ui_action display_value="Remove">791e8e2cdb9da810c34541deaa961915</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_afccc9f7db69a010adac9f5faa9619c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-13 14:07:56</sys_updated_on>
+        <sys_user_role display_value="x_aleen_badgeoff.admin" name="x_aleen_badgeoff.admin">c6612950db306c10c34541deaa96191c</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
