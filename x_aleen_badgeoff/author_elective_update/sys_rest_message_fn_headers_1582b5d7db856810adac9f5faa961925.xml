@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="DELETE">
+        <name>Authorization</name>
+        <rest_message_function display_value="POST">fd72b597db856810adac9f5faa96199c</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-18 07:05:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1582b5d7db856810adac9f5faa961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_1582b5d7db856810adac9f5faa961925</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:05:26</sys_updated_on>
+        <value>Bearer ${Token}</value>
+    </sys_rest_message_fn_headers>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_rest_message_fn_headers_1582b5d7db856810adac9f5faa961925</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
+        <name>Authorization</name>
+        <rest_message_function display_value="POST">fd72b597db856810adac9f5faa96199c</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-18 07:05:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1582b5d7db856810adac9f5faa961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_1582b5d7db856810adac9f5faa961925</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:05:26</sys_updated_on>
+        <value>Bearer ${Token}</value>
+    </sys_rest_message_fn_headers>
+</record_update>]]></payload>
+        <payload_hash>-2051252887</payload_hash>
+        <record_name>Authorization</record_name>
+        <reverted_from/>
+        <source>83ee876fdb61a010c34541deaa961967</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-13 04:58:23</sys_created_on>
+        <sys_id>dc1f83afdb61a010c34541deaa961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176fa1bedce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-13 04:58:23</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>1c1f83af2e61a0107210fd46c7d06240</update_guid>
+        <update_guid_history>1c1f83af2e61a0107210fd46c7d06240:0,47fecb6faa61a010d8bf19f5f13151fa:-1690335493,00d275d77f8568107d1aa8bca8331355:938204773</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-14 00:01:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rest_message_fn_headers">sys_rest_message_fn_headers</sys_db_object>
+        <sys_id>11da23612259417d835249b520939519</sys_id>
+        <sys_metadata>1582b5d7db856810adac9f5faa961925</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent display_value="POST">fd72b597db856810adac9f5faa96199c</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_headers_1582b5d7db856810adac9f5faa961925</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_headers_1582b5d7db856810adac9f5faa961925">dc1f83afdb61a010c34541deaa961940</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-14 00:01:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
