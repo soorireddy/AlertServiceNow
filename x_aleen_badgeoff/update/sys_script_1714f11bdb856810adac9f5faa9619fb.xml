@@ -38,7 +38,7 @@
         var Token = null;
         var responseObj = JSON.parse(responseBody);
         if (null != responseObj && responseObj.success && null != responseObj.data) {
-            Token = "Bearer "+responseObj.data.access_token;
+            Token = 'Bearer '+responseObj.data.access_token;
             var requestBody1 = '{ "identity": { "firstName":"' + current.subject.first_name + '", "lastName":"' + current.subject.last_name + '","email":"' + current.subject.email +
                 '","masterIdentityId":"' + current.subject.user_name + '"}}';
             var requestBody = requestBody1.toString();
@@ -66,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1714f11bdb856810adac9f5faa9619fb</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Create User In Alert After Badge Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -75,7 +75,7 @@
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_script_1714f11bdb856810adac9f5faa9619fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-14 00:09:01</sys_updated_on>
+        <sys_updated_on>2021-01-14 00:17:46</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
