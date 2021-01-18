@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_aleen_badgeoff.AEBadgeofficeScript</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AEBadgeofficeScript</name>
+        <script><![CDATA[var AEBadgeofficeScript = Class.create();
+AEBadgeofficeScript.prototype = {
+    initialize: function() {
+        this.jwt_token = this.getJWT();
+    },
+
+    getJWT: function() {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_aleen_badgeoff.GetJWTToken', 'POST');
+            var requestBody1 = '{ "username":"' + gs.getProperty('x_aleen_badgeoff.alert_api_username') + '", "password":"' + gs.getProperty('x_aleen_badgeoff.alert_api_password') + '"}';
+            var requestBody = requestBody1.toString();
+            r.setRequestBody(requestBody);
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+            var Token = null;
+            var responseObj = JSON.parse(responseBody);
+            if (null != responseObj && responseObj.success && null != responseObj.data) {
+                Token = 'Bearer ' + responseObj.data.access_token;
+                gs.info('Authentication is Successful');
+            }
+            return Token;
+        } catch (ex) {
+            var message = ex.message;
+            gs.debug('getJWT   :: ' + message);
+        }
+    },
+    syncBadgeTemplates: function() {
+        try {
+            if (null != this.jwt_token) {
+                gs.info(" Token is not Null");
+                var templateRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.GetBadgeTemplateFromAlertEnterprise', 'POST');
+                templateRequest.setRequestHeader('Authorization', this.jwt_token);
+                var templateResponse = templateRequest.execute();
+                var templateResponseBody = templateResponse.getBody();
+                var templateResponseStatus = templateResponse.getStatusCode();
+                var templateResponseObject = JSON.parse(templateResponseBody);
+                if (null != templateResponseObject && templateResponseObject.success) {
+                    var rec = new GlideRecordSecure('x_aleen_badgeoff_configuration');
+                    rec.query();
+                    if (rec.next()) {
+                        gs.info('updated existing x_aleen_badgeoff_configuration');
+                        rec.setValue('front_side_template', templateResponseObject.data[0].frontSideBadgeHTML);
+                        rec.setValue('back_side_template', templateResponseObject.data[0].backSideBadgeHTML);
+                        rec.update();
+                    } else {
+                        gs.info('inserting new x_aleen_badgeoff_configuration');
+                        var newrec = new GlideRecordSecure('x_aleen_badgeoff_configuration');
+                        newrec.setValue('front_side_template', templateResponseObject.data[0].frontSideBadgeHTML);
+                        newrec.setValue('back_side_template', templateResponseObject.data[0].backSideBadgeHTML);
+                        newrec.setValue('company_name', 'Alert Enterprise');
+                        newrec.setValue('template_for', 'Employee');
+                        newrec.insert();
+                    }
+                }
+            }
+        } catch (ex) {
+            var message = ex.message;
+            gs.debug('syncBadgeTemplates   :: ' + message);
+        }
+    },
+    type: 'AEBadgeofficeScript'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-18 08:11:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ecfa61dddb31a410adac9f5faa96194d</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>AEBadgeofficeScript</sys_name>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_script_include_ecfa61dddb31a410adac9f5faa96194d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-18 09:38:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

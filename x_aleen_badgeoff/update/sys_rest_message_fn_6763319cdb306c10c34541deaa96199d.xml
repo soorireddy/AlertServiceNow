@@ -4,10 +4,7 @@
         <basic_auth_password/>
         <basic_auth_profile/>
         <basic_auth_user/>
-        <content>{&#13;
-    "username": "admin",&#13;
-    "password": "Alert1234"&#13;
-}</content>
+        <content/>
         <function_name>POST</function_name>
         <http_method>post</http_method>
         <lock>false</lock>
@@ -21,7 +18,7 @@
         <sys_created_on>2020-11-26 13:10:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6763319cdb306c10c34541deaa96199d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>POST</sys_name>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
@@ -29,7 +26,7 @@
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_rest_message_fn_6763319cdb306c10c34541deaa96199d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-18 07:01:37</sys_updated_on>
+        <sys_updated_on>2021-01-18 08:41:59</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>
