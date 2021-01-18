@@ -28,15 +28,8 @@
         <name>Deactivate</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var r = new sn_ws.RESTMessageV2('x_aleen_badgeoff.GetJWTToken', 'POST');
-var response = r.execute();
-var responseBody = response.getBody();
-var httpStatus = response.getStatusCode();
-var Token = null;
-var responseObj = JSON.parse(responseBody);
-if (null != responseObj && responseObj.success && null != responseObj.data) {
-    Token = 'Bearer '+responseObj.data.access_token;
-}
+        <script><![CDATA[var includeScript = new AEBadgeofficeScript();
+var Token = includeScript.jwt_token;
 if (null != Token) {
     gs.info("Got the Token before making Provision call");
     var assignBadgeRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.AssignBadge', 'POST');
@@ -59,11 +52,11 @@ if (null != Token) {
     var assignBadgeRequestresponse = assignBadgeRequest.execute();
     var assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
     var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
-	var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
-	gs.info(" Deactivate Badge RequesthttpStatus  ::  " + assignBadgeRequesthttpStatus);
+    var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
+    gs.info(" Deactivate Badge RequesthttpStatus  ::  " + assignBadgeRequesthttpStatus);
     gs.info("Deactivate Badge responseObj :: " + JSON.stringify(assignBadgeresponseObj));
     if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
-        current.badge_status  = 'Inactive';
+        current.badge_status = 'Inactive';
         current.update();
     }
 }]]></script>
@@ -78,7 +71,7 @@ if (null != Token) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b9ffa5cdbf06c10c34541deaa9619ca</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Deactivate</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -87,7 +80,7 @@ if (null != Token) {
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_2b9ffa5cdbf06c10c34541deaa9619ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-14 00:14:20</sys_updated_on>
+        <sys_updated_on>2021-01-18 09:53:43</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
