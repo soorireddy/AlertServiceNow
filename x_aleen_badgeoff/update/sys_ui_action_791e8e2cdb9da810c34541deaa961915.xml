@@ -28,38 +28,12 @@
         <name>Remove</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var includeScript = new AEBadgeofficeScript();
-var Token = includeScript.jwt_token;
-if (null != Token) {
-    gs.info("Got the Token before making Provision call");
-    var assignBadgeRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.AssignBadge', 'POST');
-    assignBadgeRequest.setRequestHeader('Authorization', Token);
-    var gBadgeValidTo = new GlideDateTime(current.badge_valid_to.getDisplayValue());
-    var gDateValidTo = gBadgeValidTo.getDate();
-    var badgeValidTo = gDateValidTo.getByFormat('dd-MMM-YYYY');
-    var gBadgeValidFrom = new GlideDateTime(current.badge_valid_from.getDisplayValue());
-    var gDateValidFrom = gBadgeValidFrom.getDate();
-    var badgeValidFrom = gDateValidFrom.getByFormat('dd-MMM-YYYY');
-    var requestBody1 = '[{  "masterIdentityId":"' + current.user.user_name +
-        '", "requestUuid":"' + current.sys_id +
-        '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
-        '","validTo":"' + badgeValidTo +
-        '","assetAccessId":"' + current.badgeid +
-        '","action":"REMOVE"}]}]';
-    var requestBody = requestBody1.toString();
-    gs.info("requestBody is " + requestBody);
-    assignBadgeRequest.setRequestBody(requestBody);
-    var assignBadgeRequestresponse = assignBadgeRequest.execute();
-    var assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
-    var assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
-    var assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
-    gs.info(" De provision RequesthttpStatus is " + assignBadgeRequesthttpStatus);
-    gs.info(" De provision responseObj is " + JSON.stringify(assignBadgeresponseObj));
-    if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
-        current.alert_badge_status = 'Removed';
-        current.update();
-    }
-}]]></script>
+        <script><![CDATA[current.api_request_counter = current.api_request_counter+1;
+current.api_requested_for = 'Remove';
+current.update();
+gs.addInfoMessage('Remove Badge request has been placed , it will take sometime to Sync, it will update the Alert provisioning status as Removed in case of Successful');
+var badges_home = '/x_aleen_badgeoff_user_badges_list.do';
+action.setRedirectURL(badges_home);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -71,7 +45,7 @@ if (null != Token) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>791e8e2cdb9da810c34541deaa961915</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Remove</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -80,7 +54,7 @@ if (null != Token) {
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_ui_action_791e8e2cdb9da810c34541deaa961915</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-18 09:54:24</sys_updated_on>
+        <sys_updated_on>2021-01-19 09:58:21</sys_updated_on>
         <table>x_aleen_badgeoff_user_badges</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_aleen_badgeoff_user_badges</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_aleen_badgeoff_user_badges">api_request_counterVALCHANGES^EQ<item endquery="false" field="api_request_counter" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Async All Badge calls</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    gs.info("invoking async activate / deactivate BR");
+    var assignBadgeRequest = '';
+    var gBadgeValidTo = '';
+    var gDateValidTo = '';
+    var badgeValidTo = '';
+
+    var gBadgeValidFrom = '';
+    var gDateValidFrom = '';
+    var badgeValidFrom = '';
+    var requestBody1 = '';
+    var requestBody = '';
+    var assignBadgeRequestresponse = '';
+    var assignBadgeRequestresponseBody = '';
+    var assignBadgeRequesthttpStatus = '';
+    var assignBadgeresponseObj = '';
+    var includeScript = new AEBadgeofficeScript();
+    var Token = includeScript.jwt_token;
+    assignBadgeRequest = new sn_ws.RESTMessageV2('x_aleen_badgeoff.AssignBadge', 'POST');
+    assignBadgeRequest.setRequestHeader('Authorization', Token);
+
+    gBadgeValidTo = new GlideDateTime(current.badge_valid_to.getDisplayValue());
+    gDateValidTo = gBadgeValidTo.getDate();
+    badgeValidTo = gDateValidTo.getByFormat('dd-MMM-YYYY');
+
+    gBadgeValidFrom = new GlideDateTime(current.badge_valid_from.getDisplayValue());
+    gDateValidFrom = gBadgeValidFrom.getDate();
+    badgeValidFrom = gDateValidFrom.getByFormat('dd-MMM-YYYY');
+    // invoking x_aleen_badgeoff.AssignBadge from Activate UI Action
+    if (current.badge_status == 'Inactive' && current.api_requested_for == 'Activate') {
+        gs.info("invoking async activate  BR");
+        if (null != Token) {
+            requestBody1 = '[{  "masterIdentityId":"' + current.user.user_name +
+                '", "requestUuid":"' + current.sys_id +
+                '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
+                '","validTo":"' + badgeValidTo +
+                '","assetAccessId":"' + current.badgeid +
+                '","action":"ACTIVATE"}]}]';
+            requestBody = requestBody1.toString();
+            gs.debug("Assign Badge requestBody is " + requestBody);
+            assignBadgeRequest.setRequestBody(requestBody);
+            assignBadgeRequestresponse = assignBadgeRequest.execute();
+            assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
+            assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
+            assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
+            gs.debug("Assign Badge response " + JSON.stringify(assignBadgeresponseObj));
+            if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
+                gs.info(current.badgeid + " is activated successfully");
+                current.badge_status = 'Active';
+            } else {
+                gs.info(" Error occured while activating  badge  :: " + current.badgeid);
+            }
+            current.api_requested_for = '';
+            current.update();
+        }
+    }
+    // invoking x_aleen_badgeoff.AssignBadge from Deactivate UI Action
+    if (current.badge_status == 'Active' && current.api_requested_for == 'Deactivate') {
+        gs.info("invoking async  deactivate BR");
+        if (null != Token) {
+            requestBody1 = '[{  "masterIdentityId":"' + current.user.user_name +
+                '", "requestUuid":"' + current.sys_id +
+                '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
+                '","validTo":"' + badgeValidTo +
+                '","assetAccessId":"' + current.badgeid +
+                '","action":"DEACTIVATE"}]}]';
+            requestBody = requestBody1.toString();
+            gs.debug("Assign Badge requestBody is " + requestBody);
+            assignBadgeRequest.setRequestBody(requestBody);
+            assignBadgeRequestresponse = assignBadgeRequest.execute();
+            assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
+            assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
+            assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
+            gs.debug("deactivate badge response " + JSON.stringify(assignBadgeresponseObj));
+            if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
+                gs.info(current.badgeid + " is deactivated successfully");
+                current.badge_status = 'Inactive';
+            } else {
+                gs.info(" Error occured while deactivating  badge  :: " + current.badgeid);
+            }
+            current.api_requested_for = '';
+            current.update();
+        }
+    }
+    // invoking x_aleen_badgeoff.AssignBadge from Remove UI Action
+    if (current.api_requested_for == 'Remove') {
+        gs.info("invoking async  remove BR");
+        if (null != Token) {
+            requestBody1 = '[{  "masterIdentityId":"' + current.user.user_name +
+                '", "requestUuid":"' + current.sys_id +
+                '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
+                '","validTo":"' + badgeValidTo +
+                '","assetAccessId":"' + current.badgeid +
+                '","action":"REMOVE"}]}]';
+            requestBody = requestBody1.toString();
+            gs.debug("requestBody is " + requestBody);
+            assignBadgeRequest.setRequestBody(requestBody);
+            assignBadgeRequestresponse = assignBadgeRequest.execute();
+            assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
+            assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
+            assignBadgeresponseObj = JSON.parse(assignBadgeRequestresponseBody);
+            gs.debug(" De provision responseObj is " + JSON.stringify(assignBadgeresponseObj));
+            if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
+                current.alert_badge_status = 'Removed';
+            }
+            current.api_requested_for = '';
+            current.update();
+        }
+    }
+    // invoking x_aleen_badgeoff.AssignBadge from Provision UI Action
+    if (current.api_requested_for == 'Provision') {
+        gs.info("invoking async  provision BR");
+        if (null != Token) {
+            requestBody1 = '{  "masterIdentityId":"' + current.user.user_name +
+                '", "requestUuid":"' + current.parent_request_id +
+                '","identityAsset":[{ "validFrom": "' + badgeValidFrom +
+                '","validTo":"' + badgeValidTo +
+                '","assetAccessId":"' + current.badgeid +
+                '","action":"ADD"}]}';
+            requestBody = requestBody1.toString();
+            gs.debug("requestBody is " + requestBody);
+            assignBadgeRequest.setRequestBody(requestBody);
+            assignBadgeRequest.setHttpTimeout(120000);
+            assignBadgeRequestresponse = assignBadgeRequest.execute();
+            assignBadgeRequestresponseBody = assignBadgeRequestresponse.getBody();
+            assignBadgeRequesthttpStatus = assignBadgeRequestresponse.getStatusCode();
+            //   if (assignBadgeRequesthttpStatus == 200 && null != assignBadgeresponseObj && assignBadgeresponseObj.success) {
+            if (assignBadgeRequesthttpStatus != 400) {
+                current.alert_badge_status = 'Provisioned';
+                gs.debug("BAdge Request  Task ID " + current.parent_request_id);
+                if (null != current.parent_request_id && current.parent_request_id != "") {
+                    var grbadgeRequestTask = new GlideRecordSecure('x_aleen_badgeoff_badge_request_task');
+                    if (grbadgeRequestTask.get('number', current.parent_request_id)) {
+                        grbadgeRequestTask.state = 3;
+                        hrTaskId = grbadgeRequestTask.parent_task_id;
+                        grbadgeRequestTask.update();
+                        gs.info("Badge request Closed Successfully ");
+                    }
+                }
+            }
+            current.api_requested_for = '';
+            current.update();
+        }
+        gs.info("Provision UI Action :: END");
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-19 08:42:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ff9b2a5dbb92010adac9f5faa96192f</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Async All Badge calls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_script_7ff9b2a5dbb92010adac9f5faa96192f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-19 10:30:18</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7ff9b2a5dbb92010adac9f5faa96192f"/>
+</record_update>

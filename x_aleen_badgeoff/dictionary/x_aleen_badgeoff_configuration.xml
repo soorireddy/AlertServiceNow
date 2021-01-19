@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="BadgeConfiguration" max_length="40" name="x_aleen_badgeoff_configuration" type="collection">
+    <element label="BadgeConfiguration" max_length="40" name="x_aleen_badgeoff_configuration" sizeclass="1" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Back Side Template" max_length="20000" name="back_side_template" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Company Name" max_length="40" name="company_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Front Side Template" max_length="20000" name="front_side_template" type="string"/>

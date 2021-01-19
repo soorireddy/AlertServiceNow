@@ -77,7 +77,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>66e9fe98dbf06c10c34541deaa9619fa</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Set Badge Config And TaskInfo</sys_name>
         <sys_overrides/>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
@@ -86,7 +86,7 @@
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sys_script_66e9fe98dbf06c10c34541deaa9619fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-13 14:18:50</sys_updated_on>
+        <sys_updated_on>2021-01-19 10:17:52</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

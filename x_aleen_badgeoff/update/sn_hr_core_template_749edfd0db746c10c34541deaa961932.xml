@@ -26,7 +26,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>749edfd0db746c10c34541deaa961932</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Alert Badging Officer Template</sys_name>
         <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_policy/>
@@ -34,9 +34,9 @@
         <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_update_name>sn_hr_core_template_749edfd0db746c10c34541deaa961932</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-26 21:06:57</sys_updated_on>
+        <sys_updated_on>2021-01-18 10:39:09</sys_updated_on>
         <table>sn_hr_core_task</table>
-        <template>short_description=Alert Badging officer Task^hr_task_type=hr_service^hr_service=0a0e9bd0db746c10c34541deaa961942^state=10^task_support_team=users_and_groups^parent_case_users=6ac478f5e7400300d3dd8a63c2f6a956^assigned_to=0a826bf03710200044e0bfc8bcbe5d7a^EQ</template>
+        <template>short_description=AE:Badge^hr_task_type=hr_service^hr_service=0a0e9bd0db746c10c34541deaa961942^state=10^task_support_team=users_and_groups^parent_case_users=6ac478f5e7400300d3dd8a63c2f6a956^assigned_to=0a826bf03710200044e0bfc8bcbe5d7a^EQ</template>
         <template_reference/>
         <template_reference_field/>
         <use_assignment_date>false</use_assignment_date>

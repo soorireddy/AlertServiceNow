@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
+    <sys_data_policy2 action="DELETE">
+        <active>false</active>
+        <apply_import_set>true</apply_import_set>
+        <apply_soap>true</apply_soap>
+        <conditions table="x_aleen_badgeoff_user_badges">alert_badge_statusISNOTEMPTY^EQ<item endquery="false" field="alert_badge_status" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <enforce_ui>true</enforce_ui>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table>x_aleen_badgeoff_user_badges</model_table>
+        <reverse_if_false>true</reverse_if_false>
+        <short_description>Disable Badge Status</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-22 04:40:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b80871acdb5da810c34541deaa96198a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Disable Badge Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_data_policy2_b80871acdb5da810c34541deaa96198a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-22 04:40:49</sys_updated_on>
+    </sys_data_policy2>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
+        <instance_name>ven02573</instance_name>
+        <name>sys_data_policy2_b80871acdb5da810c34541deaa96198a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
+    <sys_data_policy2 action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <apply_import_set>true</apply_import_set>
+        <apply_soap>true</apply_soap>
+        <conditions table="x_aleen_badgeoff_user_badges">alert_badge_statusISNOTEMPTY^EQ<item endquery="false" field="alert_badge_status" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <enforce_ui>true</enforce_ui>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table>x_aleen_badgeoff_user_badges</model_table>
+        <reverse_if_false>true</reverse_if_false>
+        <short_description>Disable Badge Status</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-22 04:40:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b80871acdb5da810c34541deaa96198a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Disable Badge Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_data_policy2_b80871acdb5da810c34541deaa96198a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-22 04:40:49</sys_updated_on>
+    </sys_data_policy2>
+</record_update>]]></payload>
+        <payload_hash>-506225648</payload_hash>
+        <record_name>Disable Badge Status</record_name>
+        <reverted_from/>
+        <source>0fc1465ddb71a410adac9f5faa9619d1</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-18 09:50:43</sys_created_on>
+        <sys_id>e7e1029ddb71a410adac9f5faa961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17714e75fa20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-18 09:50:43</sys_updated_on>
+        <type>Data Policy</type>
+        <update_guid>27e1029da171a410213c3e1031055658</update_guid>
+        <update_guid_history>27e1029da171a410213c3e1031055658:0,e8d1c65d9d71a410cda4773dfd446085:-168749996,8f47651d0831a410f9f6bc6a5f2254bc:0,54376dd9be31a4105962eaca71231009:-168749996,081f43af4561a010118157c4fa9fa4ea:0,20fe0b6f1c61a010c2e2fbb5eff15144:-168749996,6c18f5aca35da8101f048c5f68ae2a7a:794072508,340871ac865da8100a96b4dc461c788d:549795362</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-19 10:30:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_data_policy2">sys_data_policy2</sys_db_object>
+        <sys_id>132355889a254ba9b738d14f298432e9</sys_id>
+        <sys_metadata>b80871acdb5da810c34541deaa96198a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Disable Badge Status</sys_name>
+        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent display_value="UserBadges">a5452dd0db306c10c34541deaa961947</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_data_policy2_b80871acdb5da810c34541deaa96198a</sys_update_name>
+        <sys_update_version display_value="sys_data_policy2_b80871acdb5da810c34541deaa96198a">e7e1029ddb71a410adac9f5faa961958</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-19 10:30:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
