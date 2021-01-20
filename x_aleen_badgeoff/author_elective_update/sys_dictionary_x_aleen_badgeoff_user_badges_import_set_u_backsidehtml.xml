@@ -72,7 +72,7 @@
     </sys_dictionary>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <application display_value="AE Badging Office">45d0a9d8dbfc2c10c34541deaa961990</application>
         <file_path/>
         <instance_id>e930a3a4db4f5780cbf6d5b0cf9619fd</instance_id>
         <instance_name>ven02573</instance_name>
@@ -106,11 +106,11 @@
         <sys_metadata>d0792e9cdbb06c10c34541deaa96197b</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Backsidehtml</sys_name>
-        <sys_package display_value="AE Badge Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_package display_value="AE Badging Office" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
         <sys_parent display_value="">c479265cdbb06c10c34541deaa9619aa</sys_parent>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="AE Badge Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope display_value="AE Badging Office">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
         <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
         <sys_update_name>sys_dictionary_x_aleen_badgeoff_user_badges_import_set_u_backsidehtml</sys_update_name>
         <sys_update_version display_value="sys_dictionary_x_aleen_badgeoff_user_badges_import_set_u_backsidehtml">1c792e9cdbb06c10c34541deaa96199d</sys_update_version>
