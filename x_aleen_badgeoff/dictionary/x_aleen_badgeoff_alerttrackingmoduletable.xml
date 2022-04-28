@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="AlertTrackingModuleTable" max_length="40" name="x_aleen_badgeoff_alerttrackingmoduletable" sizeclass="2" type="collection">
+        <element display="true" label="BadgeId" max_length="40" name="badgeid" type="string"/>
+    </element>
+</database>

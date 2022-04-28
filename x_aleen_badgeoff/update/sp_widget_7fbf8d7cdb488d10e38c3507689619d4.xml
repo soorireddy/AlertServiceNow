@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.result-container {
+ margin-top: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>alerttrackingmodule</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>AlertTrackingModule</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+	//if (input.keywords != null && input.keywords != '')
+		//data.items = getCatalogItems(input.keywords);
+	data.items = getCatalogItems();
+	
+	function getCatalogItems() {
+		var sc = new GlideRecord('x_aleen_badgeoff_alerttrackingmoduletable');
+		sc.addActiveQuery();
+		//sc.addQuery('123TEXTQUERY321', keywords);
+		sc.setLimit(10);
+		sc.query();
+		var results = [];
+		while (sc.next()) {
+			if (!$sp.canReadRecord(sc)){
+				gs.debug("Cannot read Record");
+				continue;
+			}else{
+				gs.debug("Record can be read");
+			}
+				
+
+			var item = {};
+			item.BadgeId = sc.badgeid.toString();
+			results.push(item);
+		}
+		return results;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-23 09:26:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7fbf8d7cdb488d10e38c3507689619d4</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>AlertTrackingModule</sys_name>
+        <sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sp_widget_7fbf8d7cdb488d10e38c3507689619d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-23 11:08:51</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-primary">
+ <div class="panel-heading">Request a Badge from the catalog</div>
+ <div class="panel-body">
+   Badge catalog results
+   <input class="form-control" type="search" 
+          placeholder="Start typing BadgeId" ng-model="c.data.keywords" 
+          ng-change="c.server.update()" ng-model-options="{debounce: 250}" />
+   <ul class="list-group result-container">
+     <li class="list-group-item" ng-repeat="item in c.data.items">
+       <a href>{{item.BadgeId}}</a><span class="pull-right">{{item.BadgeId}}</span>
+     </li>
+   </ul>
+ </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
