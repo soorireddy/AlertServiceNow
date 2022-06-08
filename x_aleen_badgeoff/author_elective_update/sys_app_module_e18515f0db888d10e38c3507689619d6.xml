@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>AlertTrackingModuleTables</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_aleen_badgeoff_alerttrackingmoduletable</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_aleen_badgeoff.alerttrackingmoduletable_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-23 09:52:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e18515f0db888d10e38c3507689619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AlertTrackingModuleTables</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sys_app_module_e18515f0db888d10e38c3507689619d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-23 09:52:10</sys_updated_on>
+        <timeline_page/>
+        <title>AlertTrackingModuleTables</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>ven02572</instance_name>
+        <name>sys_app_module_e18515f0db888d10e38c3507689619d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>AlertTrackingModuleTables</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_aleen_badgeoff_alerttrackingmoduletable</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_aleen_badgeoff.alerttrackingmoduletable_user</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-23 09:52:10</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e18515f0db888d10e38c3507689619d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AlertTrackingModuleTables</sys_name><sys_overrides/><sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope><sys_update_name>sys_app_module_e18515f0db888d10e38c3507689619d6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-23 09:52:10</sys_updated_on><timeline_page/><title>AlertTrackingModuleTables</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>831177465</payload_hash>
+        <record_name>AlertTrackingModuleTables</record_name>
+        <reverted_from/>
+        <source>072cbd3b1b7f41108dcc755e034bcbef</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-07 06:28:42</sys_created_on>
+        <sys_id>ff8ef5bf1b7f41108dcc755e034bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1813cd9e6bf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-07 06:28:42</sys_updated_on>
+        <type>Module</type>
+        <update_guid>3f8ef5bfc57f411057c5ab77ff173b92</update_guid>
+        <update_guid_history>3f8ef5bfc57f411057c5ab77ff173b92:0,370c7dfb877f411067a566c8e37693a2:-1476451926</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-06-07 11:59:06">79aeb1bf1b7f41108dcc755e034bcbe7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-07 06:29:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0d06d2b7863d4c468ad0b7f7c2166279</sys_id>
+        <sys_metadata>e18515f0db888d10e38c3507689619d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AlertTrackingModuleTables</sys_name>
+        <sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sys_app_module_e18515f0db888d10e38c3507689619d6</sys_update_name>
+        <sys_update_version display_value="sys_app_module_e18515f0db888d10e38c3507689619d6">ff8ef5bf1b7f41108dcc755e034bcb92</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-07 06:29:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

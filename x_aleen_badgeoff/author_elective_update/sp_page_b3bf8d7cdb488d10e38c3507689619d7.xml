@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>alerttrackingmoduletestpage</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-23 09:26:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b3bf8d7cdb488d10e38c3507689619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>alerttrackingmoduletestpage</sys_name>
+        <sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sp_page_b3bf8d7cdb488d10e38c3507689619d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-23 09:26:56</sys_updated_on>
+        <title>AlertTrackingModule - Test Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=b3bf8d7cdb488d10e38c3507689619d7"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>ven02572</instance_name>
+        <name>sp_page_b3bf8d7cdb488d10e38c3507689619d7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>alerttrackingmoduletestpage</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-23 09:26:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b3bf8d7cdb488d10e38c3507689619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>alerttrackingmoduletestpage</sys_name>
+        <sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_update_name>sp_page_b3bf8d7cdb488d10e38c3507689619d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-23 09:26:56</sys_updated_on>
+        <title>AlertTrackingModule - Test Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3bf8d7cdb488d10e38c3507689619d7"/>
+</record_update>]]></payload>
+        <payload_hash>815079180</payload_hash>
+        <record_name>alerttrackingmoduletestpage</record_name>
+        <reverted_from/>
+        <source>0a0cb9fb1b7f41108dcc755e034bcb3d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-07 06:17:46</sys_created_on>
+        <sys_id>eb0c7dfb1b7f41108dcc755e034bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1813ccfe3c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-07 06:17:46</sys_updated_on>
+        <type>Page</type>
+        <update_guid>ab0c7dfb497f411003202e60e55c6371</update_guid>
+        <update_guid_history>ab0c7dfb497f411003202e60e55c6371:815079180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-06-07 12:04:09">ffcf79ff1b7f41108dcc755e034bcb29</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-07 06:34:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>82cd247199c9428da6ad76059df1d1f1</sys_id>
+        <sys_metadata>b3bf8d7cdb488d10e38c3507689619d7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>alerttrackingmoduletestpage</sys_name>
+        <sys_package display_value="Physical Identity Access Manager" source="x_aleen_badgeoff">45d0a9d8dbfc2c10c34541deaa961990</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Physical Identity Access Manager">45d0a9d8dbfc2c10c34541deaa961990</sys_scope>
+        <sys_scope_delete display_value="">2534ec1c306b4591993dd77ed5e8d501</sys_scope_delete>
+        <sys_update_name>sp_page_b3bf8d7cdb488d10e38c3507689619d7</sys_update_name>
+        <sys_update_version display_value="sp_page_b3bf8d7cdb488d10e38c3507689619d7">eb0c7dfb1b7f41108dcc755e034bcb71</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-07 06:34:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
